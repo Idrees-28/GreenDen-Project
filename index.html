@@ -11,7 +11,7 @@
      <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
         <h1 class="text-2xl">GreenDen</h1>
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 h-6 w-6 md:hidden">
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 h-6 w-6 md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
           
@@ -35,6 +35,34 @@
         </ul>
 
      </nav>
+
+
+     <!-- sidebar -->
+
+       <section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000" style="width: 50%;height: 100vh;right: -50%;">
+        <div class="text-right p-5 ">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+     <ul class="flex flex-col gap-10 items-center text-gray-600">
+        <li>
+            <a class="hover:underline hover:text-black" href="./index.html">Home</a>
+        </li>
+
+        <li>
+            <a class="hover:underline hover:text-black" href="./product.html">Products</a>
+        </li>
+
+        <li>
+            <a class="hover:underline hover:text-black" href="./contact.html">Contact</a>
+        </li>
+        
+
+    </ul>
+</section>
+
+
+
+
 
      <!-- header -->
 
@@ -179,6 +207,8 @@
         <p>@ 2024 Greenday.com</p>
 
      </section>
+
+     <script src="index.js"></script>
 
 
      
